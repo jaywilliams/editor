@@ -1,24 +1,24 @@
-#editor
+# editor
 A basic inline HTML editor based on the [medium.com] (medium.com) authoring experience.
 
 Demo: [http://mjbp.github.io/editor] (http://mjbp.github.io/editor)
 
-##Features
+## Features
 Adds contentEditability on the fly
 
-###HTML and Styles
+### HTML and Styles
 - Bold, italic, blockquote, h1-h6, and link in pop-up editor menu
 - Ordered list when hit enter on a line starting '1.'
 - Unordered list when hit enter on a line starting '- '
 - Horizontal rule when hit enter twice on new line
 
-###Headers
+### Headers
 Treat headers differently to article body text - add editability but not the toolbar
 
-###Placeholders
+### Placeholders
 Supports placeholder text for editable elements
 
-##Usage
+## Usage
 Include editor.js and style.css
 
 Instantiate a new Editor object passing css selector (those supported by document.querySelectorAll())
@@ -28,7 +28,7 @@ var editor = new Editor('.editable');</script>
 ```
 In this example all elements with the className 'editable' will be rendered contentEditable and the toolbar enabled.
 
-###Options
+### Options
 Add editability but not the toolbar by adding 'editor-heading' class to an element:
 
 ```html
@@ -43,6 +43,6 @@ Set the HTML and style formatting you would like (the buttons shown on the toolb
         });
 ```
 
-##Browser support
+## Browser support
 Developed and tested in latest builds of Chrome and Firefox.
 
